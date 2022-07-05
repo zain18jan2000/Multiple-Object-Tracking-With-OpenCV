@@ -6,6 +6,7 @@ import  numpy as np
 cap = cv2.VideoCapture('Cars.mp4')
 
 
+# create a dictionary of all trackers in OpenCV that can be used for tracking
 OPENCV_OBJECT_TRACKERS = {
 	"csrt": cv2.legacy.TrackerCSRT_create,
 	"kcf": cv2.legacy.TrackerKCF_create,
