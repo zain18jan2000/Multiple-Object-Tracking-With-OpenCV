@@ -4,11 +4,7 @@ import  numpy as np
 
 
 cap = cv2.VideoCapture('Cars.mp4')
-width = int(cap.get(3))
-height = int(cap.get(4))
-fps = int(cap.get(cv2.CAP_PROP_FPS))
-fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-out = cv2.VideoWriter('output.mp4',fourcc,fps,(width,height))
+
 
 OPENCV_OBJECT_TRACKERS = {
 	"csrt": cv2.legacy.TrackerCSRT_create,
@@ -60,8 +56,6 @@ while True:
         tracker = OPENCV_OBJECT_TRACKERS['kcf']()
         trackers.add(tracker, frame, roi)
 
-
-    out.write(frame)
 
 cap.release()
 cv2.destroyAllWindows()
