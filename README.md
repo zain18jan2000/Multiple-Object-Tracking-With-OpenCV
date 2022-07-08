@@ -6,6 +6,6 @@ OpenCV Based Multi Object Tracking Implementation In Python
 
 https://youtu.be/wInNatV7Ft4
 
-<h2>For detailed explanation, please ferer to link below,</h2>
+<h2>For detailed explanation, please refer to link below,</h2>
 
 https://youtu.be/T588klKBPNo
